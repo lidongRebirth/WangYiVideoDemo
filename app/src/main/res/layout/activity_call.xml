@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/large_size_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" />
+    <View
+        android:id="@+id/touch_zone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/notificationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:shadowColor="#484848"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:textColor="#f1f1f1"
+        android:textSize="16sp"
+        android:background="@drawable/avchat_call_bg"/>
+
+    <FrameLayout
+        android:id="@+id/small_size_preview_layout"
+        android:layout_width="64dp"
+        android:layout_height="98dp"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp">
+
+        <LinearLayout
+            android:id="@+id/small_size_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:orientation="vertical"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:src="@mipmap/ic_launcher"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tv_id"
+                android:text="白依然"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:text="正在等待接受中..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_accept_switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_hangup_call"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="挂断"
+            android:paddingLeft="20dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/hangup_pic"/>
+        <TextView
+            android:id="@+id/tv_switch_call"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingRight="20dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/switch_camera"
+            android:gravity="center_horizontal"
+            android:text="切换摄像头" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_cancel_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="70dp"
+        android:drawableTop="@mipmap/hangup_pic"
+        android:gravity="center_horizontal"
+        android:text="取消" />
+
+
+</FrameLayout>
